@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -336,6 +337,15 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="864739780764837">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="873075329132078">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="RestartText" sid="689093604135642">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

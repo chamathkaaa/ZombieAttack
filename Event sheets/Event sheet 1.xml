@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Score" sid="186622555093368" static="0" type="number">0</variable>
         <event-block sid="631376076302225">
             <conditions>
                 <condition id="-1" name="Every tick" sid="980743198219999" type="System" />
@@ -11,6 +12,9 @@
                 <action id="-22" name="Set angle toward position" sid="769656501581854" type="Player2">
                     <param id="0" name="X">Mouse.X</param>
                     <param id="1" name="Y">Mouse.Y</param>
+                </action>
+                <action id="0" name="Set text" sid="224740269289755" type="Text2">
+                    <param id="0" name="Text">&quot;Current Score: &quot; &amp; Score</param>
                 </action>
             </actions>
         </event-block>
@@ -84,6 +88,61 @@
                     <param id="2" name="Image point">0</param>
                 </action>
                 <action id="-9" name="Destroy" sid="610751468353073" type="Zombie" />
+                <action id="-10" name="Add to" sid="229832130739662" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="689887840467389">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="103280971587901" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="818089650669195" type="Player2" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="539942133245619" type="System">
+                    <param id="0" name="Object to create">Zombie</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(1024)</param>
+                    <param id="3" name="Y">random(1024)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="762267691180021">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="163142622239105" type="Zombie">
+                    <param id="0" name="Object">Player2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="413152475588479" type="Player2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="987760737866301" type="RestartText">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="357995766150492">
+            <conditions>
+                <condition id="3" name="On key released" sid="628530719777278" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="418711649823676" type="Zombie" />
+                <action id="-15" name="Set visible" sid="178288416765603" type="Player2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="830468152738503" type="RestartText">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="800993513363319" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
         </event-block>
     </events>

@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -347,6 +348,9 @@
         <object-type name="RestartText" sid="689093604135642">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Touch" sid="951038388517401">
+            <plugin id="Touch" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -358,6 +362,11 @@
     <global-instances>
         <global-instance type="Mouse" uid="1" />
         <global-instance type="Keyboard" uid="2" />
+        <global-instance type="Touch" uid="13">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />

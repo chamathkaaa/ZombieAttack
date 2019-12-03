@@ -36,7 +36,10 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="637159227230418" type="Zombie" />
+                <action id="-12" name="Subtract from" sid="637159227230418" type="Zombie">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Value">1</param>
+                </action>
                 <action id="0" name="Spawn another object" sid="508664310284999" type="Bullet">
                     <param id="0" name="Object">Fire</param>
                     <param id="1" name="Layer">1</param>
@@ -64,6 +67,23 @@
                     <param id="0" name="X">Player2.X</param>
                     <param id="1" name="Y">Player2.Y</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="760338053000090">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="628558764101567" type="Zombie">
+                    <param id="0" name="Instance variable">Health</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="791731390723614" type="Zombie">
+                    <param id="0" name="Object">Fire</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="610751468353073" type="Zombie" />
             </actions>
         </event-block>
     </events>

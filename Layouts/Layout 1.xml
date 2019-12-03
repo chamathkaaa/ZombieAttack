@@ -75,6 +75,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Health>5</Health>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
@@ -93,8 +96,8 @@
                         <x>590</x>
                         <y>360</y>
                         <z>0</z>
-                        <width>180</width>
-                        <height>202</height>
+                        <width>139</width>
+                        <height>168</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.501607716</hotspotY>
@@ -142,6 +145,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Health>5</Health>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
@@ -157,11 +163,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>424</x>
-                        <y>457</y>
+                        <x>420.889160156</x>
+                        <y>430.585632324</y>
                         <z>0</z>
-                        <width>180</width>
-                        <height>202</height>
+                        <width>139</width>
+                        <height>168</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.501607716</hotspotY>
@@ -176,6 +182,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Health>5</Health>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
@@ -194,8 +203,8 @@
                         <x>562</x>
                         <y>153</y>
                         <z>0</z>
-                        <width>180</width>
-                        <height>202</height>
+                        <width>139</width>
+                        <height>168</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.501607716</hotspotY>
@@ -210,6 +219,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Health>5</Health>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
@@ -228,8 +240,8 @@
                         <x>220</x>
                         <y>621</y>
                         <z>0</z>
-                        <width>180</width>
-                        <height>202</height>
+                        <width>139</width>
+                        <height>168</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.501607716</hotspotY>
@@ -314,6 +326,43 @@
                         <hotspotX>0.501597464</hotspotX>
                         <hotspotY>0.502415478</hotspotY>
                         <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Zombie" uid="3">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Health>5</Health>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>80</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>607</x>
+                        <y>563</y>
+                        <z>0</z>
+                        <width>139</width>
+                        <height>168</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501607716</hotspotY>
+                        <angle>-2.378780127</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>

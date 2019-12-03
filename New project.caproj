@@ -62,6 +62,9 @@
         </object-type>
         <object-type name="Zombie" sid="762379702074124">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Health" sid="622465008084263" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Bullet" sid="960216074615009">
                     <behavior id="Bullet" />

@@ -97,7 +97,7 @@
         <event-block sid="689887840467389">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="103280971587901" type="System">
-                    <param id="0" name="Interval (seconds)">5</param>
+                    <param id="0" name="Interval (seconds)">3</param>
                 </condition>
                 <condition id="-9" name="Is visible" sid="818089650669195" type="Player2" />
             </conditions>
@@ -105,8 +105,12 @@
                 <action id="-3" name="Create object" sid="539942133245619" type="System">
                     <param id="0" name="Object to create">Zombie</param>
                     <param id="1" name="Layer">1</param>
-                    <param id="2" name="X">random(1024)</param>
+                    <param id="2" name="X">1400</param>
                     <param id="3" name="Y">random(1024)</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="373222522577414" type="Zombie">
+                    <param id="0" name="X">Player2.X</param>
+                    <param id="1" name="Y">Player2.Y</param>
                 </action>
             </actions>
         </event-block>

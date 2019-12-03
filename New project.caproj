@@ -17,11 +17,8 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
-        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
-        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -59,63 +56,6 @@
         </object-type>
         <object-type name="Keyboard" sid="280925077914548">
             <plugin id="Keyboard" />
-        </object-type>
-        <object-type name="Player" sid="489014277559748">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="ScrollTo" sid="533571659745009">
-                    <behavior id="scrollto" />
-                </behavior-type>
-                <behavior-type name="BoundToLayout" sid="269888494835410">
-                    <behavior id="bound" />
-                </behavior-type>
-                <behavior-type name="8Direction" sid="328060865108073">
-                    <behavior id="EightDir" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="831258173660615" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="U:\Tutorials\CImages\Ussoldier.png">
-                        <collision-poly>
-                            <point x="0.295" y="0.295" />
-                            <point x="0.5" y="0.3" />
-                            <point x="0.62" y="0.38" />
-                            <point x="0.855" y="0.5" />
-                            <point x="0.79" y="0.79" />
-                            <point x="0.5" y="0.81" />
-                            <point x="0.335" y="0.665" />
-                            <point x="0.29" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Bullet" sid="972330724639508">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="929923416809368">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="DestroyOutsideLayout" sid="775364166219366">
-                    <behavior id="destroy" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="261736126392720" speed="5">
-                    <frame duration="1" hotspotX="0.548161" hotspotY="0.463158" original-source="U:\illustrator\work\assets\bullet3.png">
-                        <collision-poly>
-                            <point x="0.998249" y="0.463158" />
-                            <point x="0.858144" y="0.868421" />
-                            <point x="0.548161" y="0.978947" />
-                            <point x="0.201401" y="0.978947" />
-                            <point x="0.00350261" y="0.463158" />
-                            <point x="0.222417" y="0.0105263" />
-                            <point x="0.548161" y="0.0210527" />
-                            <point x="0.84063" y="0.110526" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="Zombie" sid="762379702074124">
             <plugin id="Sprite" />
@@ -342,6 +282,41 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="124039148271793" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501259" original-source="U:\Tutorials\CImages\fire.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bullet" sid="905288635243517">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="836031268433630">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="921769105372230">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="969416180756472" speed="5">
+                    <frame duration="1" hotspotX="0.555556" hotspotY="0.666667" original-source="U:\illustrator\work\assets\newBullet.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player2" sid="559483928795485">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="943329755865686" speed="5">
+                    <frame duration="1" hotspotX="0.501597" hotspotY="0.502415" original-source="U:\Tutorials\CImages\survivor-idle_rifle_0.png">
+                        <image-point name="Imagepoint 1" x="0.939297" y="0.7343" />
+                        <collision-poly>
+                            <point x="0.178914" y="0.270531" />
+                            <point x="0.498403" y="0.352657" />
+                            <point x="0.674121" y="0.492754" />
+                            <point x="0.846645" y="0.768116" />
+                            <point x="0.498403" y="0.821256" />
+                            <point x="0.134185" y="0.797101" />
+                            <point x="0.121406" y="0.497585" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

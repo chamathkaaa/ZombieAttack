@@ -29,5 +29,42 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="405219417991234">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="113161906247573" type="Bullet">
+                    <param id="0" name="Object">Zombie</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="637159227230418" type="Zombie" />
+                <action id="0" name="Spawn another object" sid="508664310284999" type="Bullet">
+                    <param id="0" name="Object">Fire</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="834518686560807" type="Bullet" />
+            </actions>
+        </event-block>
+        <event-block sid="874782700404073">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="944964659413088" type="System" />
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="340814887058341" type="Zombie">
+                    <param id="0" name="Angle">random(360)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="789492576647221">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="983206164596494" type="Zombie" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="633454099413288" type="Zombie">
+                    <param id="0" name="X">Player2.X</param>
+                    <param id="1" name="Y">Player2.Y</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

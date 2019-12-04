@@ -4,7 +4,7 @@
     <name>Event sheet 1</name>
     <events>
         <variable constant="0" name="Score" sid="186622555093368" static="0" type="number">0</variable>
-        <event-block sid="631376076302225">
+        <event-block any="1" sid="631376076302225">
             <conditions>
                 <condition id="-1" name="Every tick" sid="980743198219999" type="System" />
             </conditions>
@@ -18,7 +18,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="549786539652810">
+        <event-block any="1" sid="549786539652810">
             <conditions>
                 <condition id="0" name="On click" sid="814443035267430" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
@@ -129,7 +129,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="357995766150492">
+        <event-block any="1" sid="357995766150492">
             <conditions>
                 <condition id="3" name="On key released" sid="628530719777278" type="Keyboard">
                     <param id="0" name="Key">32</param>
@@ -146,6 +146,9 @@
                 <action id="-9" name="Set value" sid="800993513363319" type="System">
                     <param id="0" name="Variable">Score</param>
                     <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="140507038254794" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
                 </action>
             </actions>
         </event-block>
